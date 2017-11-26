@@ -24,8 +24,7 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'wp-bootstrap-starter' ); ?></a>
     <?php if(!is_page_template( 'blank-page.php' ) && !is_page_template( 'blank-page-with-container.php' )): ?>
 	<header id="masthead" class="site-header navbar-static-top" role="banner">
-        <div class="container">
-            <nav class="navbar navbar-expand-xl navbar-dark p-0">
+            <nav class="navbar navbar-expand-xl navbar-light p-0">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -45,7 +44,6 @@
                 ?>
 
             </nav>
-        </div>
 	</header><!-- #masthead -->
     <?php if(is_front_page() && !get_theme_mod( 'header_banner_visibility' )): ?>
         <div id="page-sub-header" <?php if(has_header_image()) { ?>style="background-image: url('<?php header_image(); ?>');" <?php } ?>>
