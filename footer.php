@@ -16,12 +16,11 @@
 	</div><!-- #content -->
     <?php get_template_part( 'footer-widget' ); ?>
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="container-fluid p-3 p-md-5">
+		<div class="container-fluid p-3">
             <div class="site-info">
                 &copy; <?php echo date('Y'); ?> <?php echo '<a href="'.home_url().'">'.get_bloginfo('name').'</a>'; ?>
-                <span class="sep"> | </span>
-                <a class="credits" href="https://afterimagedesigns.com/wp-bootstrap-starter/" target="_blank" title="Wordpress Technical Support" alt="Bootstrap Wordpress Theme"><?php echo esc_html__('Bootstrap Wordpress Theme','wp-bootstrap-starter'); ?></a>
-
+				<span class="sep"> | </span>
+				<span class="credits">Sebastian Sokołowski</span>
             </div><!-- close .site-info -->
 		</div>
 	</footer><!-- #colophon -->
