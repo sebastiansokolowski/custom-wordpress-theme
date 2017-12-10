@@ -16,7 +16,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+
+
 <?php wp_head(); ?>
+<div class="main-container">
+<div class="container">
+<img src="<?php echo get_bloginfo('template_directory'); ?>/assets/img/banner.jpg" alt="Mountain View">
 </head>
 
 <body <?php body_class(); ?>>
@@ -71,6 +76,5 @@
         </div>
     <?php endif; ?>
 	<div id="content" class="site-content">
-		<div class="container">
 			<div class="row">
                 <?php endif; ?>

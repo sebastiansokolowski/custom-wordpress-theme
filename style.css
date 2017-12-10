@@ -508,6 +508,19 @@ a.page-scroller {
 }
 
 /*--------------------------------------------------------------
+# Custom
+--------------------------------------------------------------*/
+.main-container{
+  background: #f0f5fb;
+
+}
+.container{
+  background: #ffffff;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
 /* Text meant only for screen readers. */
