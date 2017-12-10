@@ -255,7 +255,6 @@ header#masthead {
   box-shadow: 0 0.5rem 1rem rgba(0,0,0,.10), inset 0 -1px 0 rgba(0,0,0,.1);
   border: 1px solid #c40009;
   border-radius: .25rem;
-  overflow: hidden;
 }
 
 .navbar-brand > a {
