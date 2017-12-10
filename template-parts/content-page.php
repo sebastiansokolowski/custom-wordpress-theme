@@ -24,7 +24,7 @@
 			the_content();
 
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Strona:', 'wp-bootstrap-starter' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Strona:', 'wp-bezpieczny-vat' ),
 				'after'  => '</div>',
 			) );
 		?>
@@ -36,7 +36,7 @@
 				edit_post_link(
 					sprintf(
 						/* translators: %s: Name of current post */
-						esc_html__( 'Edytuj %s', 'wp-bootstrap-starter' ),
+						esc_html__( 'Edytuj %s', 'wp-bezpieczny-vat' ),
 						the_title( '<span class="screen-reader-text">"', '"</span>', false )
 					),
 					'<span class="edit-link">',

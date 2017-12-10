@@ -26,7 +26,7 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'wp-bootstrap-starter' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'wp-bezpieczny-vat' ); ?></a>
     <?php if(!is_page_template( 'blank-page.php' ) && !is_page_template( 'blank-page-with-container.php' )): ?>
 	<header id="masthead" class="site-header navbar-static-top" role="banner">
             <nav class="navbar navbar-expand-xl navbar-light p-0">
@@ -67,7 +67,7 @@
                     if(get_theme_mod( 'header_banner_tagline_setting' )){
                         echo get_theme_mod( 'header_banner_tagline_setting' );
                 }else{
-                        echo esc_html__('To customize the contents of this header banner and other elements of your site, go to Dashboard > Appearance > Customize','wp-bootstrap-starter');
+                        echo esc_html__('To customize the contents of this header banner and other elements of your site, go to Dashboard > Appearance > Customize','wp-bezpieczny-vat');
                     }
                     ?>
                 </p>

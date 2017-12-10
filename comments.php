@@ -31,7 +31,7 @@ if ( post_password_required() ) {
             $comments_number = get_comments_number();
             if ( '1' === $comments_number ) {
                 /* translators: %s: post title */
-                printf( _x( 'Jedna myśl na &ldquo;%s&rdquo;', 'comments title', 'wp-bootstrap-starter' ), get_the_title() );
+                printf( _x( 'Jedna myśl na &ldquo;%s&rdquo;', 'comments title', 'wp-bezpieczny-vat' ), get_the_title() );
             } else {
                 printf(
                 /* translators: 1: number of comments, 2: post title */
@@ -40,7 +40,7 @@ if ( post_password_required() ) {
                         '%1$s myśli na &ldquo;%2$s&rdquo;',
                         $comments_number,
                         'comments title',
-                        'wp-bootstrap-starter'
+                        'wp-bezpieczny-vat'
                     ),
                     number_format_i18n( $comments_number ),
                     get_the_title()
@@ -52,11 +52,11 @@ if ( post_password_required() ) {
 
         <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
             <nav id="comment-nav-above" class="navigation comment-navigation" role="navigation">
-                <h2 class="screen-reader-text"><?php esc_html_e( 'Nawigacja komentarzy', 'wp-bootstrap-starter' ); ?></h2>
+                <h2 class="screen-reader-text"><?php esc_html_e( 'Nawigacja komentarzy', 'wp-bezpieczny-vat' ); ?></h2>
                 <div class="nav-links">
 
-                    <div class="nav-previous"><?php previous_comments_link( esc_html__( 'Starsze Komentarze', 'wp-bootstrap-starter' ) ); ?></div>
-                    <div class="nav-next"><?php next_comments_link( esc_html__( 'Nowsze Komentarze', 'wp-bootstrap-starter' ) ); ?></div>
+                    <div class="nav-previous"><?php previous_comments_link( esc_html__( 'Starsze Komentarze', 'wp-bezpieczny-vat' ) ); ?></div>
+                    <div class="nav-next"><?php next_comments_link( esc_html__( 'Nowsze Komentarze', 'wp-bezpieczny-vat' ) ); ?></div>
 
                 </div><!-- .nav-links -->
             </nav><!-- #comment-nav-above -->
@@ -70,11 +70,11 @@ if ( post_password_required() ) {
 
         <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
             <nav id="comment-nav-below" class="navigation comment-navigation" role="navigation">
-                <h2 class="screen-reader-text"><?php esc_html_e( 'Nawigacja komentarzy', 'wp-bootstrap-starter' ); ?></h2>
+                <h2 class="screen-reader-text"><?php esc_html_e( 'Nawigacja komentarzy', 'wp-bezpieczny-vat' ); ?></h2>
                 <div class="nav-links">
 
-                    <div class="nav-previous"><?php previous_comments_link( esc_html__( 'Starsze Komentarze', 'wp-bootstrap-starter' ) ); ?></div>
-                    <div class="nav-next"><?php next_comments_link( esc_html__( 'Nowsze Komentarze', 'wp-bootstrap-starter' ) ); ?></div>
+                    <div class="nav-previous"><?php previous_comments_link( esc_html__( 'Starsze Komentarze', 'wp-bezpieczny-vat' ) ); ?></div>
+                    <div class="nav-next"><?php next_comments_link( esc_html__( 'Nowsze Komentarze', 'wp-bezpieczny-vat' ) ); ?></div>
 
                 </div><!-- .nav-links -->
             </nav><!-- #comment-nav-below -->
@@ -87,22 +87,22 @@ if ( post_password_required() ) {
     // If comments are closed and there are comments, let's leave a little note, shall we?
     if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) : ?>
 
-        <p class="no-comments"><?php esc_html_e( 'Komentowanie jest wyłączone.', 'wp-bootstrap-starter' ); ?></p>
+        <p class="no-comments"><?php esc_html_e( 'Komentowanie jest wyłączone.', 'wp-bezpieczny-vat' ); ?></p>
         <?php
     endif; ?>
 
     <?php comment_form( $args = array(
         'id_form'           => 'commentform',  // that's the wordpress default value! delete it or edit it ;)
         'id_submit'         => 'commentsubmit',
-        'title_reply'       => __( 'Zostaw odpowiedź do', 'wp-bootstrap-starter' ),  // that's the wordpress default value! delete it or edit it ;)
-        'title_reply_to'    => __( 'Zostaw odpowiedź do %s', 'wp-bootstrap-starter' ),  // that's the wordpress default value! delete it or edit it ;)
-        'cancel_reply_link' => __( 'Anuluj odpowiedź', 'wp-bootstrap-starter' ),  // that's the wordpress default value! delete it or edit it ;)
-        'label_submit'      => __( 'Wyślij komentarz', 'wp-bootstrap-starter' ),  // that's the wordpress default value! delete it or edit it ;)
+        'title_reply'       => __( 'Zostaw odpowiedź do', 'wp-bezpieczny-vat' ),  // that's the wordpress default value! delete it or edit it ;)
+        'title_reply_to'    => __( 'Zostaw odpowiedź do %s', 'wp-bezpieczny-vat' ),  // that's the wordpress default value! delete it or edit it ;)
+        'cancel_reply_link' => __( 'Anuluj odpowiedź', 'wp-bezpieczny-vat' ),  // that's the wordpress default value! delete it or edit it ;)
+        'label_submit'      => __( 'Wyślij komentarz', 'wp-bezpieczny-vat' ),  // that's the wordpress default value! delete it or edit it ;)
 
         'comment_field' =>  '<p><textarea placeholder="Start typing..." id="comment" class="form-control" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>',
 
         'comment_notes_after' => '<p class="form-allowed-tags">' .
-            __( 'Możesz użyć tych <abbr title="HyperText Markup Language">HTML</abbr> tagów i atrybutów:', 'wp-bootstrap-starter' ) .
+            __( 'Możesz użyć tych <abbr title="HyperText Markup Language">HTML</abbr> tagów i atrybutów:', 'wp-bezpieczny-vat' ) .
             '</p><div class="alert alert-info">' . allowed_tags() . '</div>'
 
         // So, that was the needed stuff to have bootstrap basic styles for the form elements and buttons

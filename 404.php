@@ -14,11 +14,11 @@ get_header(); ?>
 
 			<section class="error-404 not-found">
 				<header class="page-header">
-					<h1 class="page-title"><?php esc_html_e( 'Strona nie została znaleziona.', 'wp-bootstrap-starter' ); ?></h1>
+					<h1 class="page-title"><?php esc_html_e( 'Strona nie została znaleziona.', 'wp-bezpieczny-vat' ); ?></h1>
 				</header><!-- .page-header -->
 
 				<div class="page-content">
-					<p><?php esc_html_e( 'Wygląda na to, że nie znaleziono nic w podanej lokalizacji. Spróbuj użyć wyszukiwarki.', 'wp-bootstrap-starter' ); ?></p>
+					<p><?php esc_html_e( 'Wygląda na to, że nie znaleziono nic w podanej lokalizacji. Spróbuj użyć wyszukiwarki.', 'wp-bezpieczny-vat' ); ?></p>
 
 					<?php
 						get_search_form();
