@@ -656,6 +656,10 @@ a img.aligncenter {
   display: none;
 }
 
+.widget_search .search-form label{
+  width: 100%;
+}
+
 .nav > li > a:focus,
 .nav > li > a:hover {
   background-color: #eee;
