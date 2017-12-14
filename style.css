@@ -442,11 +442,10 @@ a.page-scroller {
   .dropdown-menu {
     border: medium none;
     margin-left: 1.250rem;
-    padding: 0;
   }
 
   .dropdown-menu li a {
-    padding: 0;
+    padding-left: 0.5rem
   }
 
   #masthead .navbar-nav > li > a {
