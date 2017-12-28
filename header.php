@@ -21,7 +21,7 @@
 <?php wp_head(); ?>
 <div class="main-container">
 <div class="container">
-<img src="<?php echo get_bloginfo('template_directory'); ?>/assets/img/banner.jpg" alt="Mountain View">
+<img src="<?php echo get_bloginfo('template_directory'); ?>/assets/img/banner.gif" alt="Mountain View">
 </head>
 
 <body <?php body_class(); ?>>
