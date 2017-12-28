@@ -21,7 +21,6 @@
                 &copy; <?php echo date('Y'); ?> <?php echo '<a href="'.home_url().'">'.get_bloginfo('name').'</a>'; ?>
 				<span class="sep"> | </span>
 				<span class="credits">Sebastian Sokołowski</span>
-				<span class="sponsor">Zadanie współfinansowane ze środków Funduszu Sprawiedliwości, którego dysponentem jest Minister Sprawiedliwości.</span>
             </div><!-- close .site-info -->
 		</div>
 	</footer><!-- #colophon -->

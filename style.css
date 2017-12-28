@@ -930,11 +930,6 @@ footer#colophon {
   text-align: center;
 }
 
-.sponsor {
-  font-size: 70%;
-  display:block;
-}
-
 .copyright a, footer#colophon a {
   color: inherit;
 }
